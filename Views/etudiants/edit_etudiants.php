@@ -2,7 +2,7 @@
 <hr>
 
 <div class="container w-75">
-    <form action="/mine/PHP/index.php?page=Ctrl_etudiants&action=edit" method="post" class="form">
+    <form action="/mine/PHP/index.php?page=Ctrl_etudiants&action=edit" method="post" class="form" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?= $etudiant['id'] ?>"><br>
     <label for="nom" class="form-label">Nom :</label><input type="text" name="nom" id="nom" required class="form-control" value="<?= $etudiant['nom'] ?>"><br>
     <label for="prenom" class="form-label">Prenom :</label><input type="text" name="prenom" id="prenom" required class="form-control" value="<?= $etudiant['prenom'] ?>"><br>

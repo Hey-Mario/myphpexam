@@ -23,7 +23,7 @@ class Ctrl_etudiants
             case 'add':
                 if (isset($_POST['add'])) {
                     extract($_POST);
-                    Mdl_etudiant::save_data($nom,$prenom,$date_naissance,$cin,$email,$tel,$comptefb,$photo,$password);
+                    Mdl_etudiant::save_data($nom,$prenom,$date_naissance,$cin,$email,$tel,$comptefb, upload_pic(),$password);
                     header("location:/mine/PHP/index.php?page=Ctrl_etudiants");
                 }
                 break;
@@ -37,7 +37,7 @@ class Ctrl_etudiants
             case 'edit':
                 if (isset($_POST['update'])) {
                     extract($_POST);
-                    Mdl_etudiant::set_data($nom,$prenom,$date_naissance,$cin,$email,$tel,$comptefb,$photo,$password, $id);
+                    Mdl_etudiant::set_data($nom,$prenom,$date_naissance,$cin,$email,$tel,$comptefb, upload_pic(),$password, $id);
                     header("location:/mine/PHP/index.php?page=Ctrl_etudiants");
                 }
                 break;

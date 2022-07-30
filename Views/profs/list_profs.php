@@ -16,7 +16,7 @@
     <tbody class="text-center">
     <?php foreach($profs as $prof) { ?>
     <tr>
-        <td><?= $prof['photo']?></td>
+        <td><img src="./assets/pictures/<?= $prof['photo']?>" alt="" width="50" height="50" class="rounded-circle"></td>
         <td><?= $prof['nom']?></td>
         <td><?= $prof['email']?></td>
         <td><?= $prof['tel']?></td>

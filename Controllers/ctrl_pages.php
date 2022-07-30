@@ -1,5 +1,6 @@
 <?php
 include('Utils/db.php');
+include('Utils/fonction.php');
 include("Controllers/Ctrl_acceuils.php");
 include("Controllers/Ctrl_auths.php");
 include("Controllers/Ctrl_etudiants.php");

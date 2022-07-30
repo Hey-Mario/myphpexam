@@ -19,7 +19,7 @@
     <tbody class="text-center">
     <?php foreach($etudiants as $etudiant) { ?>
     <tr>
-        <td><?= $etudiant['photo']?></td>
+        <td><img src="./assets/pictures/<?= $etudiant['photo']?>" alt="" width="50" height="50" class="rounded-circle"></td>
         <td><?= $etudiant['nom']?></td>
         <td><?= $etudiant['prenom']?></td>
         <td><?= $etudiant['date_naissance']?></td>

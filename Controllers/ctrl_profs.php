@@ -24,7 +24,7 @@ class Ctrl_profs
             case 'add':
                 if (isset($_POST['add'])) {
                     extract($_POST);
-                    Mdl_prof::save_data($nom, $email, $tel, $photo);
+                    Mdl_prof::save_data($nom, $email, $tel, upload_pic());
                     header("location:/mine/PHP/index.php?page=Ctrl_profs");
                 }
                 break;
@@ -38,7 +38,7 @@ class Ctrl_profs
             case 'edit':
                 if (isset($_POST['update'])) {
                     extract($_POST);
-                    Mdl_prof::set_data($nom, $email,$tel, $photo, $id);
+                    Mdl_prof::set_data($nom, $email,$tel, upload_pic(), $id);
                     header("location:/mine/PHP/index.php?page=Ctrl_profs");
                 }
                 break;
