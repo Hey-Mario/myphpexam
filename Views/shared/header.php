@@ -27,10 +27,10 @@
         <a class="nav-link text-light" href="index.php?page=Ctrl_profs">Profs</a>
         </li>
         <li class="nav-item ml-3">
-        <a class="nav-link text-light" href="#section3">Etudiants</a>
+        <a class="nav-link text-light" href="index.php?page=Ctrl_etudiants">Etudiants</a>
         </li>
         <li class="nav-item ml-3">
-        <a class="nav-link text-light" href="#section3">Contact</a>
+        <a class="nav-link text-light" href="index.php?page=Ctrl_contacts">Contact</a>
         </li>
        
     </ul>

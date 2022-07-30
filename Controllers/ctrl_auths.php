@@ -1,7 +1,7 @@
 <?php
 session_start();
-include 'Models/mdl_prof.php';
-include 'Models/mdl_etudiant.php';
+// include 'Models/mdl_prof.php';
+// include 'Models/mdl_etudiant.php';
 
     class Ctrl_auths
     {
@@ -9,21 +9,28 @@ include 'Models/mdl_etudiant.php';
         {
             extract($_POST) ;
             
-            $_SESSION["status"] = $status;
+            $mail = "admin@gmail.com";
+            $pswd = 1234;
 
-            // switch ($status) {
-            //     case 'etudiant':
-                    
-            //         break;
-            //     case 'prof':
-            //         # code...
-            //         break;
-            //     case 'admin':
-            //         # code...
-            //         break;
+            switch ($status) {
+                case 'etudiant':
+                    #cpde
+                    break;
+                case 'prof':
+                    # code...
+                    break;
+                case 'admin':
+                    if ($login != $email) {
+                        echo 'erreur au niveau du mail';
+                    }
+                    elseif ($pass != $pswd) {
+                        echo 'erreur au niveau du mot de passe';
+                    }
+                    break;
                 
-            // }
+            }
 
+            $_SESSION["status"] = $status;
             header("location:index.php?page=Ctrl_acceuils");
 
         }

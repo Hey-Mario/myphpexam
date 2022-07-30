@@ -38,10 +38,10 @@ if (isset($_SESSION["status"])) {
       </h2>
 
       <div class="row">
-        <div class="feature-col col-lg-4 col-xs-12">
+        <div class="feature-col col-lg-5 offset-lg-1 col-xs-12">
           <div class="card card-block text-center border-dark">
             <div>
-            <a href="" class="text-dark">
+            <a href="index.php?page=Ctrl_etudiants" class="text-dark">
               <div class="feature-icon">
               <img class="bg-dark rounded-circle mt-1" src="/mine/PHP/assets/img/Nos_etudiant.png" alt="img" style="width: 80px;">
               </div>
@@ -57,7 +57,7 @@ if (isset($_SESSION["status"])) {
           </div>
         </div>
 
-        <div class="feature-col col-lg-4 col-xs-12">
+        <div class="feature-col col-lg-5 col-xs-12">
           <div class="card card-block text-center border-warning">
             <div>
             <a <?php if ($_SESSION["status"] != 'etudiant') {?>href="index.php?page=Ctrl_profs" class="text-dark"<?php } else { ?> class="text-muted"<?php } ?>>
@@ -73,8 +73,9 @@ if (isset($_SESSION["status"])) {
             </div>
           </div>
         </div>
-
-        <div class="feature-col col-lg-4 col-xs-12">
+      </div>
+      <div class="row mt-4">
+        <div class="feature-col col-lg-5 offset-lg-1 col-xs-12">
           <div class="card card-block text-center border-success">
               <div>
                 <a href="index.php?page=Ctrl_modules" class= "text-dark">
@@ -93,7 +94,26 @@ if (isset($_SESSION["status"])) {
                 </div>
           </div>
         </div>
-      </div>
+        <div class="feature-col col-lg-5 col-xs-12">
+          <div class="card card-block text-center border-success">
+              <div>
+                <a href="index.php?page=Ctrl_contacts" class= "text-dark">
+                <div class="feature-icon">
+                    <img class="bg-dark rounded-circle mt-1" src="/mine/PHP/assets/img/Nos_module.png" alt="img" style="width: 80px;">
+                </div>
+              </div>
+                <div>
+                    <h3>  
+                    NOS CONTACTS
+                    </h3>
+                </a>
+                    <p>
+                        Eque feugiat contentiones ei has. Id summo mundi explicari his, nec in maiorum scriptorem.
+                    </p>
+                </div>
+          </div>
+        </div>
+        </div>
 </section>
 
 

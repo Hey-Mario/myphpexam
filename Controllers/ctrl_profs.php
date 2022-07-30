@@ -1,6 +1,6 @@
 <?php
 
-//include 'Models/mdl_prof.php';
+include 'Models/mdl_prof.php';
 class Ctrl_profs
 {
     public static function index()
@@ -24,7 +24,7 @@ class Ctrl_profs
             case 'add':
                 if (isset($_POST['add'])) {
                     extract($_POST);
-                    Mdl_prof::save_data($nom, $email);
+                    Mdl_prof::save_data($nom, $email, $tel, $photo);
                     header("location:/mine/PHP/index.php?page=Ctrl_profs");
                 }
                 break;
@@ -38,7 +38,7 @@ class Ctrl_profs
             case 'edit':
                 if (isset($_POST['update'])) {
                     extract($_POST);
-                    Mdl_prof::set_data($nom, $email, $id);
+                    Mdl_prof::set_data($nom, $email,$tel, $photo, $id);
                     header("location:/mine/PHP/index.php?page=Ctrl_profs");
                 }
                 break;
@@ -48,11 +48,10 @@ class Ctrl_profs
     {
         if ($page != "list") {
             if ($page == "edit" && isset($_GET['id'])) {
-                $profs = Mdl_prof::get_data($_GET['id']);   
+                $prof = Mdl_prof::get_data($_GET['id']);   
             }
         } else {
             $profs = Mdl_prof::list_data();
-            $modules = Mdl_module::list_data();
         }
         include('Views/profs/' . $page . '_profs.php');
     }

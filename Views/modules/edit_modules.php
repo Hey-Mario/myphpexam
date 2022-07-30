@@ -8,10 +8,10 @@
     <label for="prof">Prof :</label><input type="text" name="prof" id="prof" class="form-control" required><br>
     <div class="row">
         <div class="col">
-            <label for="code">Code :</label><input type="number" name="code" id="code" class="form-control" value="<?= $module['code']?>" required><br>
+            <label for="code">Code :</label><input type="text" name="code" id="code" class="form-control" value="<?= $module['code']?>" required><br>
         </div>
         <div class="col">
-            <label for="heure">Heure :</label><input type="number" name="heure" id="heure" class="form-control" value="<?= $module['heure']?>" required><br>
+            <label for="heure">Heure :</label><input type="time" name="heure" id="heure" class="form-control" value="<?= $module['heure']?>" required><br>
         </div>
     </div>
     <div class="text-center">

@@ -1,4 +1,5 @@
 <?php
+
 include 'Models/mdl_module.php';
 class Ctrl_modules
 {
@@ -23,7 +24,7 @@ class Ctrl_modules
             case 'add':
                 if (isset($_POST['add'])) {
                     extract($_POST);
-                    $test = Mdl_module::save_data($nom, $code, $heure);
+                    Mdl_module::save_data($nom, $code, $heure);
                     header("location:/mine/PHP/index.php?page=Ctrl_modules");
                 }
                 break;
