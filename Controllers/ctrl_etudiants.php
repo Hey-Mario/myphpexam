@@ -24,21 +24,21 @@ class Ctrl_etudiants
                 if (isset($_POST['add'])) {
                     extract($_POST);
                     Mdl_etudiant::save_data($nom,$prenom,$date_naissance,$cin,$email,$tel,$comptefb, upload_pic(),$password);
-                    header("location:/mine/PHP/index.php?page=Ctrl_etudiants");
+                    header("location:./index.php?page=Ctrl_etudiants");
                 }
                 break;
             case 'delete':
                 if (isset($_GET['id'])) {
                     $id = $_GET['id'];
                     Mdl_etudiant::delete_data($id);
-                    header("location:/mine/PHP/index.php?page=Ctrl_etudiants");
+                    header("location:./index.php?page=Ctrl_etudiants");
                 }
                 break;
             case 'edit':
                 if (isset($_POST['update'])) {
                     extract($_POST);
                     Mdl_etudiant::set_data($nom,$prenom,$date_naissance,$cin,$email,$tel,$comptefb, upload_pic(),$password, $id);
-                    header("location:/mine/PHP/index.php?page=Ctrl_etudiants");
+                    header("location:./index.php?page=Ctrl_etudiants");
                 }
                 break;
         }

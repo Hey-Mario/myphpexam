@@ -3,7 +3,7 @@
 <hr>
 
 <div class="container w-75">
-    <form action="/mine/PHP/index.php?page=Ctrl_profs&action=add" method="post" class="form" enctype="multipart/form-data">
+    <form action="./index.php?page=Ctrl_profs&action=add" method="post" class="form" enctype="multipart/form-data">
         <label for="nom" class="form-label">Nom :</label><input type="text" name="nom" id="nom" required class="form-control"><br>
         <label for="email">Email :</label><input type="email" name="email" id="email" class="form-control" required><br>
         <label for="tel" class="form-label">Telephone :</label><input type="text" min=1 name="tel" id="tel" required class="form-control"><br>
@@ -19,7 +19,7 @@
                 <button type="submit" name="add" class="btn btn-primary">Enregistrer</button>
             </div>
             <div class="col">
-                <a href="/mine/PHP/index.php?page=Ctrl_profs" class="btn btn-dark">Liste des profs</a>
+                <a href="./index.php?page=Ctrl_profs" class="btn btn-dark">Liste des profs</a>
             </div>
         </div>
     </form>

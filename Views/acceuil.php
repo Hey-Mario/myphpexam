@@ -56,6 +56,7 @@ if (isset($_SESSION["status"])) {
             </div>
           </div>
         </div>
+       <?php if (isset($_SESSION["status"]) && $_SESSION["status"] != "etudiant") {?>
 
         <div class="feature-col col-lg-5 col-xs-12">
           <div class="card card-block text-center border-warning">
@@ -74,6 +75,7 @@ if (isset($_SESSION["status"])) {
           </div>
         </div>
       </div>
+      <?php } ?>
       <div class="row mt-4">
         <div class="feature-col col-lg-5 offset-lg-1 col-xs-12">
           <div class="card card-block text-center border-success">

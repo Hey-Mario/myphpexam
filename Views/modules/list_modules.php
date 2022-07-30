@@ -20,8 +20,8 @@
         <td><?= $module['heure']?></td>
         <td></td>
         <?php if ($_SESSION["status"] == 'admin') {?>  
-        <td><a href="/mine/PHP/index.php?page=Ctrl_modules&view=edit&id=<?= $module['id']?>" class="btn btn-sm bg-dark"><img src="/mine/PHP/assets/img/edit.png" class=""></a></td>
-        <td><a href="/mine/PHP/index.php?page=Ctrl_modules&action=delete&id=<?= $module['id']?>" class="btn btn-sm bg-dark"><img src="/mine/PHP/assets/img/trash.png" class=""></a></td>
+        <td><a href="./index.php?page=Ctrl_modules&view=edit&id=<?= $module['id']?>" class="btn btn-sm bg-dark"><img src="./assets/img/edit.png" class=""></a></td>
+        <td><a href="./index.php?page=Ctrl_modules&action=delete&id=<?= $module['id']?>" class="btn btn-sm bg-dark"><img src="./assets/img/trash.png" class=""></a></td>
         <?php } ?>
     </tr>
     <?php } ?>
@@ -29,7 +29,7 @@
 </table>
 <div class="text-center mb-3">
 <?php if ($_SESSION["status"] == 'admin') {?>
-<a href="/mine/PHP/index.php?page=Ctrl_modules&view=add" class="btn btn-success">Ajouter un module</a>
+<a href="./index.php?page=Ctrl_modules&view=add" class="btn btn-success">Ajouter un module</a>
 <?php } ?>
 
 </div>

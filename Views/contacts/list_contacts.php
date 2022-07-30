@@ -18,8 +18,8 @@
         <td><?= $contact['email']?></td>
         <td><?= $contact['tel']?></td>
         <?php if ($_SESSION["status"] == 'admin') {?>  
-        <td><a href="/mine/PHP/index.php?page=Ctrl_contacts&view=edit&id=<?= $contact['id']?>" class="btn btn-sm bg-dark"><img src="/mine/PHP/assets/img/edit.png" class=""></a></td>
-        <td><a href="/mine/PHP/index.php?page=Ctrl_contacts&action=delete&id=<?= $contact['id']?>" class="btn btn-sm bg-dark"><img src="/mine/PHP/assets/img/trash.png" class=""></a></td>
+        <td><a href="./index.php?page=Ctrl_contacts&view=edit&id=<?= $contact['id']?>" class="btn btn-sm bg-dark"><img src="./assets/img/edit.png" class=""></a></td>
+        <td><a href="./index.php?page=Ctrl_contacts&action=delete&id=<?= $contact['id']?>" class="btn btn-sm bg-dark"><img src="./assets/img/trash.png" class=""></a></td>
         <?php } ?>
     </tr>
     <?php } ?>
@@ -27,7 +27,7 @@
 </table>
 <div class="text-center mb-3">
 <?php if ($_SESSION["status"] == 'admin') {?>
-<a href="/mine/PHP/index.php?page=Ctrl_contacts&view=add" class="btn btn-success">Ajouter un contact</a>
+<a href="./index.php?page=Ctrl_contacts&view=add" class="btn btn-success">Ajouter un contact</a>
 <?php } ?>
 
 </div>

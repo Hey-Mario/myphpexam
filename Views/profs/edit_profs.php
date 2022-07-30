@@ -2,7 +2,7 @@
 <hr>
 
 <div class="container w-75">
-    <form action="/mine/PHP/index.php?page=Ctrl_profs&action=edit" method="post" class="form" enctype="multipart/form-data">
+    <form action="./index.php?page=Ctrl_profs&action=edit" method="post" class="form" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?= $prof['id'] ?>"><br>
     <label for="nom" class="form-label">Nom :</label><input type="text" name="nom" id="nom" value="<?= $prof['nom']?>" required class="form-control"><br>
     <label for="email">Email :</label><input type="email" name="email" id="email" class="form-control" value="<?= $prof['email']?>" required><br>
@@ -14,7 +14,7 @@
         <button type="submit" name="update" class="btn btn-success">Valider</button>
         </div>
         <div class="col">
-        <a href="/mine/PHP/index.php?page=Ctrl_profs" class="btn btn-dark">Liste des profs</a>
+        <a href="./index.php?page=Ctrl_profs" class="btn btn-dark">Liste des profs</a>
         </div>
     </div>
 </form>

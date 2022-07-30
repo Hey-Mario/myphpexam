@@ -25,21 +25,21 @@ class Ctrl_profs
                 if (isset($_POST['add'])) {
                     extract($_POST);
                     Mdl_prof::save_data($nom, $email, $tel, upload_pic());
-                    header("location:/mine/PHP/index.php?page=Ctrl_profs");
+                    header("location:./index.php?page=Ctrl_profs");
                 }
                 break;
             case 'delete':
                 if (isset($_GET['id'])) {
                     $id = $_GET['id'];
                     Mdl_prof::delete_data($id);
-                    header("location:/mine/PHP/index.php?page=Ctrl_profs");
+                    header("location:./index.php?page=Ctrl_profs");
                 }
                 break;
             case 'edit':
                 if (isset($_POST['update'])) {
                     extract($_POST);
                     Mdl_prof::set_data($nom, $email,$tel, upload_pic(), $id);
-                    header("location:/mine/PHP/index.php?page=Ctrl_profs");
+                    header("location:./index.php?page=Ctrl_profs");
                 }
                 break;
         }
