@@ -1,4 +1,6 @@
-<div class="h2 text-center font-weight-light text-uppercase my-3">Modification d'un module</div>
+<div id="container_module" class="bg-image">
+<div class="container">
+<div class="h2 text-center font-weight-light text-uppercase mt-5 pt-5">Modification d'un module</div>
 <hr>
 
 <div class="container w-75">
@@ -23,4 +25,6 @@
         </div>
     </div>
 </form>
+</div>
+</div>
 </div>

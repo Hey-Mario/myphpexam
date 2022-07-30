@@ -1,3 +1,6 @@
+<div id="container_prof" class="bg-image">
+<div class="container">
+
 <div class="h2 text-center font-weight-light text-uppercase mt-5 pt-5">Nouveau Prof</div>
 
 <hr>
@@ -23,4 +26,6 @@
             </div>
         </div>
     </form>
+</div>
+</div>
 </div>

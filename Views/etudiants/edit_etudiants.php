@@ -1,3 +1,5 @@
+<div id="container_etudiant" class="bg-image">
+<div class="container">
 <div class="h2 text-center font-weight-light text-uppercase mt-5 pt-5">Modification d'un etudiant</div>
 <hr>
 
@@ -22,4 +24,6 @@
             </div>
         </div>
     </form>
+</div>
+</div>
 </div>
