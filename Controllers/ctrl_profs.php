@@ -24,7 +24,7 @@ class Ctrl_profs
             case 'add':
                 if (isset($_POST['add'])) {
                     extract($_POST);
-                    Mdl_prof::save_data($nom, $email, $tel, upload_pic());
+                    Mdl_prof::save_data($nom, $email, $tel, upload_pic(), $module);
                     header("location:./index.php?page=Ctrl_profs");
                 }
                 break;
@@ -38,7 +38,7 @@ class Ctrl_profs
             case 'edit':
                 if (isset($_POST['update'])) {
                     extract($_POST);
-                    Mdl_prof::set_data($nom, $email,$tel, upload_pic(), $id);
+                    Mdl_prof::set_data($nom, $email,$tel, upload_pic(), $module, $id);
                     header("location:./index.php?page=Ctrl_profs");
                 }
                 break;
@@ -47,8 +47,9 @@ class Ctrl_profs
     public static function theView($page = 'list')
     {
         if ($page != "list") {
+            $modules = Mdl_module::list_data();
             if ($page == "edit" && isset($_GET['id'])) {
-                $prof = Mdl_prof::get_data($_GET['id']);   
+                $prof = Mdl_prof::get_data($_GET['id']);  
             }
         } else {
             $profs = Mdl_prof::list_data();

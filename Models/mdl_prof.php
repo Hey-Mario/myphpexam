@@ -8,11 +8,11 @@ class Mdl_prof
         return db_connect()->query($query)->fetchAll();
     }
 
-    public static function save_data($nom, $email, $tel, $photo)
+    public static function save_data($nom, $email, $tel, $photo, $module)
     {
-        $query = "INSERT INTO profs(nom, email, tel, photo) VALUES (?,?,?,?)";
+        $query = "INSERT INTO profs(nom, email, tel, photo, module) VALUES (?,?,?,?,?)";
         $q = db_connect()->prepare($query);
-        return $q->execute(array($nom, $email, $tel, $photo));
+        return $q->execute(array($nom, $email, $tel, $photo, $module));
     }
 
     public static function get_data($id)
@@ -21,11 +21,11 @@ class Mdl_prof
         return db_connect()->query($query)->fetch();
     }
 
-    public static function set_data($nom, $email,$tel, $photo, $id)
+    public static function set_data($nom, $email,$tel, $photo, $module, $id)
     {
-        $query = "UPDATE profs SET nom = ?, email= ?, tel = ?, photo = ? WHERE id = ?";
+        $query = "UPDATE profs SET nom = ?, email= ?, tel = ?, photo = ?, module = ? WHERE id = ?";
         $q = db_connect()->prepare($query);
-        return $q->execute(array($nom, $email,$tel, $photo, $id));
+        return $q->execute(array($nom, $email,$tel, $photo, $module, $id));
     }
     
     public static function delete_data($id)

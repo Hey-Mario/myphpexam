@@ -8,7 +8,7 @@
         <label for="email">Email :</label><input type="email" name="email" id="email" class="form-control" required><br>
         <label for="tel" class="form-label">Telephone :</label><input type="text" min=1 name="tel" id="tel" required class="form-control"><br>
         <label for="photo" class="form-label">Inserer votre photo :</label><input type="file" name="photo" id="photo" required class="form-control"><br>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" name="module">
             <option selected>Choisir votre module</option>
             <?php foreach($modules as $module) { ?>
             <option value="<?= $module['nom']?>"><?= $module['nom']?></option>
