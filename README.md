@@ -1,1 +1,6 @@
+![homepage](https://user-images.githubusercontent.com/105484902/182039039-ed54e9c0-1da9-41bb-b8f6-a8eebc8675ca.png)
 # examen_php![apperçu](https://user-images.githubusercontent.com/105538414/180664326-0ae1f5e0-2b3f-492b-bc05-d6bb553df269.PNG)
+![profpage](https://user-images.githubusercontent.com/105484902/182039051-f261701d-aae9-4b89-9fc9-95003332c905.png)
+![Capture d’écran (11)](https://user-images.githubusercontent.com/105484902/182039063-17a45b0c-3f39-4070-978b-bc5e9edb1cb3.png)
+![Capture d’écran (12)](https://user-images.githubusercontent.com/105484902/182039066-adbcf806-70fc-47b5-a158-b7bde0bbafbd.png)
+![Capture d’écran (13)](https://user-images.githubusercontent.com/105484902/182039098-df1682b9-79c1-4222-bc58-b63dfc414b25.png)
