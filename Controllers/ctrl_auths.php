@@ -10,28 +10,29 @@ session_start();
             extract($_POST) ;
             
             $mail = "admin@gmail.com";
-            $pswd = 1234;
-
+            $mdp = 1234;
+            $status = $_SESSION['status'];
+            
             switch ($status) {
                 case 'etudiant':
-                    #cpde
+                    
                     break;
                 case 'prof':
                     # code...
                     break;
                 case 'admin':
-                    if ($login != $email) {
-                        echo 'erreur au niveau du mail';
+                    if ($login == $mail && $pass == $mdp) {
+                        header("location:index.php?page=Ctrl_acceuils");               
                     }
-                    elseif ($pass != $pswd) {
-                        echo 'erreur au niveau du mot de passe';
+                    else{
+                        echo 'Mot de passe incorect ou mail invalide';
+                        header("location:index.php");
                     }
                     break;
-                
+                default:
+                    header("location:index.php");
+                    break;
             }
-
-            $_SESSION["status"] = $status;
-            header("location:index.php?page=Ctrl_acceuils");
 
         }
     }

@@ -4,7 +4,7 @@ class Mdl_prof
 {
     public static function list_data()
     {
-        $query = "SELECT * FROM profs ORDER BY id";
+        $query = "SELECT * FROM profs";
         return db_connect()->query($query)->fetchAll();
     }
 
